@@ -10,7 +10,7 @@ from cve_utils.patch_commit import Patch_Commit
 from cve_utils.parent_commit import Parent_Commit
 
 
-class PatchVulnBiMap:
+class PatchVulnNexus:
     """Bi-directional Mapping for patch commits to vuln commits and vice-versa, indexed by CVE ID.
 
     There will only be one instance of this class. This will be a class level variable for the CVE class. It will collect all the processed CVEs

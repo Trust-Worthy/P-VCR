@@ -21,7 +21,6 @@ from commit_analyzer import Commit_Analyzer
 from cve_utils.patch_parent_nexus import PatchVulnBiMap
 
 
-
 class CVE(BaseModel):
     """
     A CVE instance should contain everything. Vuln classifier, vuln commits, patch commits

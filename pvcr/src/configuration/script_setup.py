@@ -114,8 +114,6 @@ class SCRIPT_CONFIG(BaseModel):
     def set_LOGGING_DIR(cls, value: str)-> None:
         cls._LOGGING_DIR = value
 
-
-
 if __name__ == "__main__":
     config = SCRIPT_CONFIG()
 
