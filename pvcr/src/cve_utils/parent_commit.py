@@ -7,7 +7,16 @@ from vulnerable_commit import Vuln_Confidence
 
 class Parent_Commit():
     """
-    This is the class that creates the 5 previous parent commits relative to the patch commit
+    This is the class that gets the 5 previous parent commits relative to the patch commit. We don't know if these parent commits are the vuln commits or not.
+
+    Or maybe I could take a more iterative approach... Look at the commit directly before the patch commit. Give it a confidence level. User can set a confidence level as to
+    when to stop or the user can decide to do iterative chunks. (5 of 10 parent commits at a time).
+
+    Simplify: Start with first successfully classifying ONE parent commit that add chunking functionality!
+    - Adding only one parent commits at a time to the BiMap
+
+    Build upon:
+    - After I have these features built out... I can add in open source static analysis tools that are informed by the NVD!
         
     """
 
