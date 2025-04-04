@@ -41,7 +41,7 @@ class PatchVulnNexus:
 
         every patch commit needs to have corresponding parent commits
         every patch commit needs to have corresponding vuln commits (I'm thinking confidence levels)
-        every vuln commit needs 
+        every vuln commit needs to have at least one patch commit
 
         idea: group parent commits based on confidence level. Then use those confidence intervals as some sort of data structure for quick lookup
 

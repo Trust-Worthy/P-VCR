@@ -107,8 +107,8 @@ class Patch_Commit_Classifier(BaseModel):
         self._dmm_unit_interfacing: float = None
     def classify_patch_commit(self, patch_commit_hash_obj: Commit) -> None:
         # Update the fields based on the patch commit analysis (simplified here)
-        self._adds_code = patch_commit_hash_obj.insertions > 0
-        self._deletes_code = patch_commit_hash_obj.deletions > 0
+        self._adds_code: bool = patch_commit_hash_obj.insertions > 0
+        self._deletes_code: bool = patch_commit_hash_obj.deletions > 0
         self._refactors_code: bool = False
         
         self._changes_lines = None
